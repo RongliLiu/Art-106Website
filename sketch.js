@@ -16,6 +16,10 @@ var r=280;
 var bx=238.976;
  
 
+let myFont;
+function preload() {
+  myFont = loadFont('Vollkorn-Bold.ttf');
+}
 
 function setup() {
     var canvas=
@@ -27,7 +31,7 @@ function setup() {
 
 function draw() {
  //back 
-  background(102,145,204);
+  background('#757de8');
   
 
    //feet
@@ -42,13 +46,13 @@ beginShape();
   
    //body
  noStroke(); 
- fill(172,109,214); 
+ fill('#ffcdd2'); 
   rect(bx,308.807,22.158,163.924);
   
   
   //head
   noStroke();
-  fill(114,105,191);
+  fill('#8bf6ff');
 beginShape();
   vertex(89.968,52.262);
   vertex(408.433,52.262);
@@ -57,7 +61,7 @@ beginShape();
   
   //smalltrangle
    noStroke();
-  fill(180,107,191);
+  fill('#ffcdd2');
 beginShape();
   vertex(249.231,52.262);
   vertex(157.461,168.333);
@@ -71,7 +75,7 @@ beginShape();
   
   
   //eye
-  fill(214,109,187);
+  fill('#ffffff');
   ellipse(251.588, 136.483, 37.49,eyeH);
   
   
@@ -86,11 +90,11 @@ strokeWeight(2);
   
   
 //name
-  
-textSize(35);
-fill(11,12,11);
-text("Rongli",48,390);
-text("Liu",70,430);
+ textFont(myFont); 
+textSize(25);
+fill('#ff6f00');
+
+text("Rongli Liu",360,480);
  
   
 //Animation
@@ -138,6 +142,8 @@ text("Liu",70,430);
   }
   
 }
+
+
 
 
 

@@ -3,7 +3,7 @@ html{
 }
 
 body{
-    background-color: rgb(102,145,204);
+    background-color:#757de8;
 }
 
 #header{
@@ -19,6 +19,7 @@ body{
 }
 
 #portfolio{
+ 
     max-width:500px;
     margin: auto;
 }
@@ -27,3 +28,10 @@ body{
     max-width: 500px;
     padding: 10px;
 }
+#portfolio p{
+    max-width: 500px;
+    padding: 10px;
+    font-family: 'Vollkorn', serif;
+}
+
+
