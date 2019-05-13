@@ -92,9 +92,9 @@ strokeWeight(2);
 //name
  textFont(myFont); 
 textSize(25);
-fill('#ff6f00');
+fill('#ffffff');
 
-text("Rongli Liu",360,480);
+text("Rongli Liu",360,490);
  
   
 //Animation
